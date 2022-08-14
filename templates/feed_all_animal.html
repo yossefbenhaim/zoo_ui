@@ -1,0 +1,32 @@
+
+{%  extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {% block title %}
+   {% endblock %}
+</head>
+<body>
+    {% block content %}
+    <section class="colored-section bg-success" id="title">
+        <div >
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for msg in messages %}
+                        <p class="messages_feed">{{msg}}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        <div class="container-fluid-add">
+            <h1 class="big-heading-add">The Feed All Animal</h1>
+            <form action="#" method="post">
+            
+                <input class="btn btn-outline-light submit" type="submit" value="feed all"/>
+          
+            </form>
+        </div> 
+    </section>
+    {% endblock %}
+</body>
+</html>

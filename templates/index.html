@@ -1,0 +1,78 @@
+{%  extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %} hii yossef  {% endblock %}
+
+
+</head>
+<body>
+   
+    {% block content %}
+    
+    <section class="colored-section bg-success" id="title">
+        <div >
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for msg in messages %}
+                        <p class="messages_feed">{{msg}}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        
+        <div class="container-fluid-feed">
+       
+            
+            <div class="row">
+                <form action="#" method="post">  
+                    <div class="col-lg-4">     
+                        
+                        <h1 class="big-heading">Feed the zoo</h1>
+                       
+                        <h6 class="little-heading " >Choose an animal</h6>
+                        <h6 class="little-heading ">Feed the animal</h6>
+                        
+                       
+                        <select id="animal" name="animal" class="btn btn-light  download-button" >               
+                            {% for item in values %}
+                            <option> {{item.name_of_animal}} </option>
+                            {% endfor %}
+                        </select>
+
+                        
+                        <select name="ate" class="btn btn-light download-button"> 
+                            <option value="True" >True</option>
+                            <option value="False" >False</option>
+                        </select>
+
+                        <div>
+                            <h6  class="download-button">when you finished click here</h6> 
+                            <input class="btn btn-outline-light " type="submit" value="Feed the animal"/>
+                        </div>
+                        <div>
+                            <h6  class="download-button">Feed all  animal</h6> 
+                            <a class="btn btn-outline-light " type="submit" value="Feed the animal"  href="/the_feed_all_animals">Feed all animal</a>
+                        </div>
+                        
+                    </div>
+                </form>
+               
+            </div> 
+        </div>
+    </section>     
+
+      {% endblock %}
+</body>
+</html>
+<!-- 
+<form action="/zoo_test1/main.py" method="post">  
+    <div>
+        <h6  class="download-button">feed all animal</h6> 
+        <input class="btn btn-outline-light " name="feed_all_animal" type="submit" value="Feed all the animal"/>
+    </div>
+      {% if feed_all_animal %}
+      <option name="feed_all" value="True" >True</option>
+      {% endif %}
+    </form> -->

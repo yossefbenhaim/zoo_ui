@@ -1,0 +1,197 @@
+
+body{
+    font-family: 'Roboto', sans-serif;   
+    color: white;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(3, 3, 3);
+}
+
+
+.title_text{
+    padding: 7% 15%;
+}
+
+
+.big-heading{
+  
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color:white;
+    margin: -30% 4% 4% 0;
+    
+    
+}
+
+.little-heading{
+    
+    line-height: 1;
+    color:rgb(5, 5, 5);
+    margin-right: 3.3rem;
+    float: left;
+}
+
+.colored-section{
+    background-color:#fefcfa;
+    color: #fff;
+}
+
+.container-fluid{
+    padding: 3% 10%;
+}
+
+.container-fluid-feed{
+    padding: 10% 10%;
+}
+
+
+.btn{
+    color: black;
+}
+.select_animal{
+    text-align: left;
+}
+.messages_feed{
+    margin: -0% 0% 0% 10%;
+}
+
+.title-image{
+    margin-top: 70px;
+    right: 25%;
+    width: 20.5%;
+    transform: rotate(25deg);
+    position:absolute
+}
+
+/* button */
+.download-button{
+    margin: 5% 10% 5% 0;
+}
+
+/* novegation bar */
+
+.navbar-brand{
+
+    font-family: 'Roboto', sans-serif;
+    font-size:2rem;
+}
+
+.navbar{
+    padding-bottom:0 0 4.5rem ;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+.nav-link{
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* add_animal */
+
+
+.messages_add{
+    margin: -0% 0% 0% 10%;
+}
+
+.container-fluid-add{
+    padding: 12.8% 10%;
+}
+
+.big-heading-add{
+  
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color:white;
+    margin: -15% 8% 8% 0;
+    
+    
+}
+
+.input-text{
+    width: 15% ;
+    height: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    margin: -5% 4% 8% 0;
+    outline: 8px;
+    box-sizing: border-box;
+    transition: 1s;
+    float: left;
+    
+}
+.input-text:focus{
+    border-color: rgb(64, 0, 255);
+    box-shadow: 0 0 8px  0 rgb(107, 4, 241);
+}
+
+
+.submit{
+    margin: -5% 100rem 0 0;
+    
+
+}
+
+
+
+/* delete_animal */
+
+
+.input-text-delete{
+    width: 15% ;
+    height: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    margin: -5% 4% 8% 0;
+    outline: 8px;
+    box-sizing: border-box;
+    transition: 1s;
+    float: left;
+    
+}
+.input-text-delete:focus{
+    border-color: rgb(64, 0, 255);
+    box-shadow: 0 0 8px  0 rgb(107, 4, 241);
+}
+
+.container-fluid-delete{
+    padding: 14.5% 10%;
+}
+.big-heading-delete{
+  
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color:white;
+    margin: -18% 8% 8% 0;
+    
+    
+}
+
+.submit-delete{
+    margin: -5% 100rem 0 0;
+
+}
+
+
+.messages_delete{
+    margin: -0% 0% 0% 10%;
+}
+
+/* all_animal */
+
+.container-fluid-all_animal{
+    padding: 3% 10%;
+}
+.big-heading-all_animal{
+    color:white;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    
+    margin: -4% 0% 0% 0;
+    
+    
+}

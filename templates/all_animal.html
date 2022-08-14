@@ -1,0 +1,28 @@
+{%  extends "base.html" %}
+
+{% block title %} test {% endblock %}
+
+{% block content %}
+<section class="colored-section bg-success" id="title">
+    <div class="container-fluid-all_animal">
+        <h1 class="big-heading-all_animal">All Animal</h1>
+        <br>
+{% for item in values %}
+
+<div class="card border-success mb-3" style="max-width: 100rem;">
+    <div class="card-header"><h6>Number of animal: {{item.id}}</6h></div>
+    <div class="card-body text-success">
+      <h5 class="card-title">Name of zoo : {{item.name_of_zoo}} </h5>
+      <h6 class="card-text">Name of animal: {{item.name_of_animal}} </h6>
+      <h6 class="card-text">Family: {{item.family}}</h6>
+      <h6 class="card-text">Hungry: {{item.hungry}}</h6>
+      <h6 class="card-text">Age: {{item.age}}</h6>
+    </div>
+  </div>
+
+{% endfor %}
+
+
+</div>
+</section>
+{% endblock %}

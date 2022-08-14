@@ -1,0 +1,56 @@
+
+{%  extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {% block title %}
+   {% endblock %}
+</head>
+<body>
+    {% block content %}
+    <section class="colored-section bg-success" id="title">
+        <div >
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for msg in messages %}
+                        <p class="messages_add">{{msg}}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        <div class="container-fluid-add">
+           
+        
+            <h1 class="big-heading-add">Add Animal</h1>
+
+           
+            <div class="row">
+                <form action="#" method="post">
+                
+                            <div class="">
+                                
+                                    <input class="input-text" type="text" name="name_of_zoo" placeholder="name_of_zoo" />
+                            
+                                    <input class="input-text" type="text" name="name_of_animal" placeholder="name_of_animal" />
+                            
+                                    <input class="input-text" type="text" name="family" placeholder="family" />
+                            
+                                    <input class="input-text" type="number" name="age" placeholder="age" />
+
+                                    <select class="input-text btn btn-light"  name="hungry" class="btn btn-success  download-button" placeholder="hungry"> 
+                                        
+                                        <option value="True" >True</option>
+                                        <option value="False" >False</option>
+                                    
+                                    </select>   
+                            </div>
+                       <input class="btn btn-outline-light submit" type="submit" value="add animal"/>
+                </form>
+            </div> 
+        </div>
+    </section> 
+
+  
+    {% endblock %}
+</body>
+</html>
